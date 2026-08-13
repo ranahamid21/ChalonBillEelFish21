@@ -12,724 +12,672 @@ content="ChalonBill Eel Fish - Fresh and natural Eel Fish supplier from Singra, 
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html{
-scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-font-family:Arial,Helvetica,sans-serif;
-background:#f7f8f5;
-color:#123c2b;
-line-height:1.6;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f7f8f5;
+    color:#173d2c;
 }
 
 :root{
---green:#063b27;
---dark:#021f14;
---gold:#d5b04b;
---light:#f0f4ef;
---text:#65736c;
---white:#fff;
+    --green:#063b27;
+    --dark:#021f14;
+    --gold:#d5b04b;
+    --light:#eef4ef;
+    --text:#64736b;
+    --white:#fff;
 }
-
 
 /* HEADER */
 
 header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-z-index:1000;
-background:rgba(3,47,31,.97);
-border-bottom:1px solid var(--gold);
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(3,50,32,.97);
+    border-bottom:1px solid var(--gold);
 }
 
 .header{
-max-width:1150px;
-height:76px;
-margin:auto;
-padding:0 20px;
-display:flex;
-align-items:center;
-justify-content:space-between;
+    max-width:1150px;
+    height:76px;
+    margin:auto;
+    padding:0 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
 .logo{
-display:flex;
-align-items:center;
-gap:12px;
-text-decoration:none;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
 }
 
 .logo img{
-width:52px;
-height:52px;
-border-radius:50%;
-object-fit:cover;
-border:2px solid var(--gold);
-background:white;
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid var(--gold);
+    background:white;
 }
 
 .logo-title{
-color:white;
-font-weight:bold;
-font-size:16px;
-letter-spacing:1px;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    letter-spacing:1px;
 }
 
 .logo-sub{
-color:var(--gold);
-font-size:9px;
-letter-spacing:2px;
+    color:var(--gold);
+    font-size:9px;
+    letter-spacing:2px;
 }
 
 nav{
-display:flex;
-gap:25px;
+    display:flex;
+    gap:25px;
 }
 
 nav a{
-color:white;
-text-decoration:none;
-font-size:12px;
-font-weight:bold;
+    color:white;
+    text-decoration:none;
+    font-size:12px;
+    font-weight:bold;
 }
 
 nav a:hover{
-color:var(--gold);
+    color:var(--gold);
 }
-
 
 /* HERO */
 
 .hero{
-padding-top:76px;
-background:var(--green);
+    padding-top:76px;
+    background:var(--green);
 }
 
 .hero-inner{
-max-width:1150px;
-min-height:650px;
-margin:auto;
-padding:65px 20px;
-
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:55px;
-align-items:center;
+    max-width:1150px;
+    min-height:650px;
+    margin:auto;
+    padding:65px 20px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:55px;
 }
 
-.small-title{
-color:var(--gold);
-font-size:12px;
-letter-spacing:3px;
-font-weight:bold;
-margin-bottom:17px;
+.hero-small{
+    color:var(--gold);
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:3px;
+    margin-bottom:17px;
 }
 
 .hero h1{
-color:white;
-font-size:60px;
-line-height:1.02;
-margin-bottom:22px;
+    color:white;
+    font-size:60px;
+    line-height:1;
+    margin-bottom:22px;
 }
 
 .hero h1 span{
-color:var(--gold);
+    color:var(--gold);
 }
 
 .hero p{
-color:#d7e3dc;
-font-size:17px;
-line-height:1.9;
-max-width:530px;
-margin-bottom:28px;
+    color:#d7e3dc;
+    font-size:17px;
+    line-height:1.9;
+    max-width:530px;
+    margin-bottom:28px;
 }
 
 .buttons{
-display:flex;
-gap:12px;
-flex-wrap:wrap;
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
 }
 
 .btn{
-display:inline-block;
-padding:14px 23px;
-border-radius:5px;
-text-decoration:none;
-font-weight:bold;
-font-size:13px;
+    display:inline-block;
+    padding:14px 23px;
+    border-radius:5px;
+    text-decoration:none;
+    font-size:13px;
+    font-weight:bold;
 }
 
 .btn-gold{
-background:var(--gold);
-color:var(--green);
+    background:var(--gold);
+    color:var(--green);
 }
 
 .btn-outline{
-border:1px solid white;
-color:white;
+    color:white;
+    border:1px solid white;
 }
 
 .hero-image img{
-width:100%;
-height:450px;
-object-fit:cover;
-border-radius:12px;
-border:4px solid rgba(213,176,75,.7);
-box-shadow:0 25px 60px rgba(0,0,0,.35);
+    width:100%;
+    height:450px;
+    object-fit:cover;
+    border-radius:12px;
+    border:4px solid rgba(213,176,75,.7);
+    box-shadow:0 25px 60px rgba(0,0,0,.35);
 }
-
 
 /* TRUST */
 
 .trust{
-background:white;
-border-bottom:1px solid #e3e8e2;
+    background:white;
+    border-bottom:1px solid #e2e7e2;
 }
 
 .trust-inner{
-max-width:1000px;
-margin:auto;
-display:grid;
-grid-template-columns:repeat(4,1fr);
+    max-width:1000px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
 }
 
 .trust-box{
-padding:25px 10px;
-text-align:center;
-border-right:1px solid #e3e8e2;
+    text-align:center;
+    padding:25px 10px;
+    border-right:1px solid #e2e7e2;
 }
 
 .trust-box strong{
-display:block;
-color:var(--green);
-font-size:13px;
+    display:block;
+    color:var(--green);
+    font-size:13px;
 }
 
 .trust-box span{
-color:var(--text);
-font-size:11px;
+    color:var(--text);
+    font-size:11px;
 }
-
 
 /* GENERAL */
 
 section{
-padding:85px 20px;
+    padding:85px 20px;
 }
 
 .container{
-max-width:1050px;
-margin:auto;
+    max-width:1050px;
+    margin:auto;
 }
 
 .label{
-color:#aa8227;
-font-size:11px;
-font-weight:bold;
-letter-spacing:3px;
-margin-bottom:10px;
+    color:#a47e28;
+    font-size:11px;
+    font-weight:bold;
+    letter-spacing:3px;
+    margin-bottom:10px;
 }
 
 .title{
-font-size:40px;
-line-height:1.15;
-color:var(--green);
-margin-bottom:18px;
+    color:var(--green);
+    font-size:40px;
+    line-height:1.15;
+    margin-bottom:18px;
 }
 
 .text{
-color:var(--text);
-font-size:16px;
-line-height:1.9;
+    color:var(--text);
+    font-size:16px;
+    line-height:1.9;
 }
-
 
 /* ABOUT */
 
 .about{
-background:white;
+    background:white;
 }
 
 .about-grid{
-display:grid;
-grid-template-columns:1.2fr .8fr;
-gap:55px;
-align-items:center;
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:55px;
+    align-items:center;
 }
 
 .about-card{
-background:var(--light);
-padding:35px;
-border-left:4px solid var(--gold);
+    background:var(--light);
+    padding:35px;
+    border-left:4px solid var(--gold);
 }
 
 .about-card h3{
-color:var(--green);
-margin-bottom:10px;
+    color:var(--green);
+    margin-bottom:10px;
 }
 
 .about-card p{
-color:var(--text);
-font-size:14px;
+    color:var(--text);
+    font-size:14px;
+    line-height:1.8;
 }
-
 
 /* OWNER */
 
 .owner{
-background:#f1f4f0;
+    background:#f0f4f0;
 }
 
 .owner-grid{
-display:grid;
-grid-template-columns:350px 1fr;
-gap:60px;
-align-items:center;
+    display:grid;
+    grid-template-columns:350px 1fr;
+    gap:60px;
+    align-items:center;
 }
 
 .owner-photo{
-text-align:center;
+    text-align:center;
 }
 
 .owner-photo img{
-width:300px;
-height:350px;
-object-fit:cover;
-border-radius:12px;
-box-shadow:0 15px 40px rgba(0,0,0,.15);
-border:5px solid white;
+    width:300px;
+    height:350px;
+    object-fit:cover;
+    border-radius:12px;
+    border:5px solid white;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
 }
 
 .owner-name{
-font-size:27px;
-font-weight:bold;
-color:var(--green);
-margin-top:20px;
+    color:var(--green);
+    font-size:26px;
+    font-weight:bold;
+    margin-top:18px;
 }
 
 .owner-role{
-color:#a17b25;
-font-size:12px;
-font-weight:bold;
-letter-spacing:2px;
-margin-top:4px;
+    color:#a47e28;
+    font-size:11px;
+    font-weight:bold;
+    letter-spacing:2px;
 }
 
 .owner-info{
-background:white;
-padding:35px;
-border-radius:8px;
+    background:white;
+    padding:35px;
+    border-radius:8px;
 }
-
-.owner-info h3{
-font-size:25px;
-color:var(--green);
-margin-bottom:12px;
-}
-
-.owner-info p{
-color:var(--text);
-font-size:15px;
-line-height:1.9;
-}
-
 
 /* WHY */
 
 .why{
-background:white;
-text-align:center;
+    background:white;
 }
 
 .features{
-margin-top:40px;
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:16px;
+    margin-top:40px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:16px;
 }
 
 .feature{
-background:#f5f7f4;
-padding:30px 18px;
-border:1px solid #e2e7e1;
+    background:#f4f7f4;
+    padding:30px 18px;
+    text-align:center;
+    border:1px solid #e1e7e1;
 }
 
 .icon{
-font-size:31px;
-margin-bottom:10px;
+    font-size:31px;
+    margin-bottom:10px;
 }
 
 .feature h3{
-color:var(--green);
-font-size:16px;
-margin-bottom:7px;
+    color:var(--green);
+    font-size:16px;
+    margin-bottom:7px;
 }
 
 .feature p{
-color:var(--text);
-font-size:13px;
+    color:var(--text);
+    font-size:13px;
 }
-
 
 /* PRODUCT */
 
 .product{
-background:var(--green);
-color:white;
+    background:var(--green);
 }
 
 .product .title{
-color:white;
+    color:white;
 }
 
 .product .text{
-color:#d8e4dd;
+    color:#d7e3dc;
 }
 
 .product-box{
-margin-top:35px;
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:30px;
+    margin-top:35px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
 }
 
 .product-info{
-border:1px solid rgba(213,176,75,.5);
-padding:30px;
+    border:1px solid rgba(213,176,75,.5);
+    padding:30px;
 }
 
 .product-info h3{
-color:var(--gold);
-font-size:25px;
-margin-bottom:12px;
+    color:var(--gold);
+    font-size:25px;
+    margin-bottom:12px;
 }
 
 .product-info p{
-color:#d8e4dd;
+    color:#d7e3dc;
+    line-height:1.8;
 }
 
 .product-list{
-list-style:none;
+    list-style:none;
 }
 
 .product-list li{
-padding:12px 0;
-border-bottom:1px solid rgba(255,255,255,.15);
-color:white;
+    color:white;
+    padding:12px 0;
+    border-bottom:1px solid rgba(255,255,255,.15);
 }
 
 .product-list li:before{
-content:"✓";
-color:var(--gold);
-font-weight:bold;
-margin-right:10px;
+    content:"✓";
+    color:var(--gold);
+    font-weight:bold;
+    margin-right:10px;
 }
-
 
 /* PROCESS */
 
 .process{
-background:#f1f4f0;
-text-align:center;
+    background:#f0f4f0;
 }
 
 .steps{
-margin-top:40px;
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:15px;
+    margin-top:40px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
 }
 
 .step{
-background:white;
-padding:28px 18px;
-border-top:3px solid var(--gold);
+    background:white;
+    padding:28px 18px;
+    text-align:center;
+    border-top:3px solid var(--gold);
 }
 
 .number{
-color:var(--gold);
-font-size:28px;
-font-weight:bold;
+    color:var(--gold);
+    font-size:28px;
+    font-weight:bold;
 }
 
 .step h3{
-color:var(--green);
-font-size:16px;
-margin:8px 0;
+    color:var(--green);
+    font-size:16px;
+    margin:8px 0;
 }
 
 .step p{
-color:var(--text);
-font-size:13px;
+    color:var(--text);
+    font-size:13px;
 }
-
 
 /* WHOLESALE */
 
 .wholesale{
-background:white;
-text-align:center;
+    background:white;
 }
 
 .wholesale-box{
-background:var(--light);
-padding:45px 25px;
-border:1px solid #e1e6e0;
+    background:var(--light);
+    padding:45px 25px;
+    text-align:center;
+    border:1px solid #e0e6e0;
 }
 
 .wholesale-box h2{
-color:var(--green);
-font-size:30px;
-margin-bottom:12px;
+    color:var(--green);
+    font-size:30px;
+    margin-bottom:12px;
 }
 
 .wholesale-box p{
-max-width:650px;
-margin:auto;
-color:var(--text);
-margin-bottom:25px;
+    max-width:650px;
+    margin:0 auto 25px;
+    color:var(--text);
 }
-
 
 /* CONTACT */
 
 .contact{
-background:var(--green);
-text-align:center;
+    background:var(--green);
 }
 
 .contact .title{
-color:white;
+    color:white;
 }
 
 .contact .text{
-color:#d8e4dd;
+    color:#d7e3dc;
 }
 
 .contact-grid{
-margin-top:40px;
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:15px;
+    margin-top:40px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
 }
 
 .contact-box{
-border:1px solid rgba(213,176,75,.4);
-padding:25px 15px;
+    padding:25px 15px;
+    text-align:center;
+    border:1px solid rgba(213,176,75,.4);
 }
 
 .contact-box strong{
-display:block;
-color:var(--gold);
-font-size:11px;
-letter-spacing:1px;
-margin-bottom:8px;
+    display:block;
+    color:var(--gold);
+    font-size:11px;
+    letter-spacing:1px;
+    margin-bottom:8px;
 }
 
 .contact-box span,
 .contact-box a{
-color:white;
-text-decoration:none;
-font-size:13px;
-word-break:break-word;
+    color:white;
+    font-size:13px;
+    text-decoration:none;
+    word-break:break-word;
 }
-
 
 /* FOOTER */
 
 footer{
-background:var(--dark);
-text-align:center;
-padding:40px 20px;
-color:#aebbb4;
+    background:var(--dark);
+    color:#aebbb4;
+    text-align:center;
+    padding:40px 20px;
 }
 
 .footer-logo{
-width:65px;
-height:65px;
-border-radius:50%;
-border:2px solid var(--gold);
-object-fit:cover;
-background:white;
-margin-bottom:10px;
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid var(--gold);
+    background:white;
+    margin-bottom:10px;
 }
 
 footer h3{
-color:white;
-letter-spacing:2px;
-font-size:17px;
+    color:white;
+    font-size:17px;
+    letter-spacing:2px;
 }
 
 footer .gold{
-color:var(--gold);
-font-size:10px;
-letter-spacing:2px;
+    color:var(--gold);
+    font-size:10px;
+    letter-spacing:2px;
 }
 
 footer p{
-font-size:12px;
-margin-top:7px;
+    font-size:12px;
+    margin-top:7px;
 }
-
 
 /* WHATSAPP */
 
 .whatsapp{
-position:fixed;
-right:18px;
-bottom:18px;
-width:58px;
-height:58px;
-border-radius:50%;
-background:#25D366;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:27px;
-text-decoration:none;
-box-shadow:0 8px 25px rgba(0,0,0,.3);
-z-index:9999;
+    position:fixed;
+    right:18px;
+    bottom:18px;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:#25D366;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:27px;
+    text-decoration:none;
+    box-shadow:0 8px 25px rgba(0,0,0,.3);
+    z-index:9999;
 }
-
 
 /* MOBILE */
 
 @media(max-width:800px){
 
-.header{
-height:70px;
-}
+    .header{
+        height:70px;
+    }
 
-.logo img{
-width:47px;
-height:47px;
-}
+    nav{
+        display:none;
+    }
 
-.logo-title{
-font-size:13px;
-}
+    .hero{
+        padding-top:70px;
+    }
 
-.logo-sub{
-font-size:7px;
-}
+    .hero-inner{
+        grid-template-columns:1fr;
+        padding:48px 18px 55px;
+        gap:35px;
+    }
 
-nav{
-display:none;
-}
+    .hero h1{
+        font-size:43px;
+    }
 
-.hero{
-padding-top:70px;
-}
+    .hero p{
+        font-size:15px;
+    }
 
-.hero-inner{
-grid-template-columns:1fr;
-padding:48px 18px 55px;
-gap:35px;
-}
+    .hero-image img{
+        height:330px;
+    }
 
-.hero h1{
-font-size:43px;
-}
+    .trust-inner{
+        grid-template-columns:1fr 1fr;
+    }
 
-.hero p{
-font-size:15px;
-}
+    .trust-box{
+        border-bottom:1px solid #e2e7e2;
+    }
 
-.hero-image img{
-height:330px;
-}
+    section{
+        padding:65px 18px;
+    }
 
-.trust-inner{
-grid-template-columns:1fr 1fr;
-}
+    .title{
+        font-size:31px;
+    }
 
-.trust-box{
-border-bottom:1px solid #e3e8e2;
-}
+    .about-grid{
+        grid-template-columns:1fr;
+    }
 
-section{
-padding:65px 18px;
-}
+    .owner-grid{
+        grid-template-columns:1fr;
+        gap:35px;
+    }
 
-.title{
-font-size:31px;
-}
+    .owner-photo img{
+        width:260px;
+        height:310px;
+    }
 
-.about-grid{
-grid-template-columns:1fr;
-}
+    .features{
+        grid-template-columns:1fr 1fr;
+    }
 
-.owner-grid{
-grid-template-columns:1fr;
-gap:35px;
-}
+    .product-box{
+        grid-template-columns:1fr;
+    }
 
-.owner-photo img{
-width:260px;
-height:310px;
-}
+    .steps{
+        grid-template-columns:1fr 1fr;
+    }
 
-.features{
-grid-template-columns:1fr 1fr;
-}
-
-.product-box{
-grid-template-columns:1fr;
-}
-
-.steps{
-grid-template-columns:1fr 1fr;
-}
-
-.contact-grid{
-grid-template-columns:1fr 1fr;
-}
-
+    .contact-grid{
+        grid-template-columns:1fr 1fr;
+    }
 }
 
 @media(max-width:450px){
 
-.hero h1{
-font-size:38px;
-}
+    .hero h1{
+        font-size:38px;
+    }
 
-.buttons{
-flex-direction:column;
-}
+    .buttons{
+        flex-direction:column;
+    }
 
-.btn{
-width:100%;
-text-align:center;
-}
+    .btn{
+        width:100%;
+        text-align:center;
+    }
 
-.features{
-grid-template-columns:1fr;
-}
-
-.steps{
-grid-template-columns:1fr;
-}
-
-.contact-grid{
-grid-template-columns:1fr;
-}
-
+    .features,
+    .steps,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
 }
 
 </style>
 </head>
 
-
 <body>
-
 
 <!-- HEADER -->
 
@@ -739,7 +687,7 @@ grid-template-columns:1fr;
 
 <a href="#home" class="logo">
 
-<img src="logo.png" alt="ChalonBill Eel Fish">
+<img src="logo.png" alt="ChalonBill Eel Fish Logo">
 
 <div>
 <div class="logo-title">CHALONBILL EEL FISH</div>
@@ -769,7 +717,7 @@ grid-template-columns:1fr;
 
 <div>
 
-<div class="small-title">
+<div class="hero-small">
 PREMIUM BANGLADESHI EEL FISH
 </div>
 
@@ -806,7 +754,7 @@ VIEW PRODUCT
 </div>
 
 
-<!-- EEL FISH ONLY ONCE -->
+<!-- তোমার নতুন কুঁচে মাছের ছবি -->
 
 <div class="hero-image">
 
@@ -870,21 +818,17 @@ Fresh Fish. Reliable Supply.
 </h2>
 
 <p class="text">
-
 ChalonBill Eel Fish is a local Eel Fish
 supply business based in Singra, Natore,
 Bangladesh.
-
 </p>
 
 <br>
 
 <p class="text">
-
 We focus on supplying natural and fresh
 Eel Fish for wholesale buyers and business
 customers.
-
 </p>
 
 </div>
@@ -916,11 +860,10 @@ service to our buyers.
 
 <div class="owner-grid">
 
-
 <div class="owner-photo">
 
 <img src="owner.png"
-alt="Md Rana Hamid - Owner">
+alt="Md Rana Hamid Owner">
 
 <div class="owner-name">
 Md Rana Hamid
@@ -943,26 +886,17 @@ MEET THE OWNER
 Md Rana Hamid
 </h2>
 
-<h3>
-ChalonBill Eel Fish
-</h3>
-
-<p>
-
-I am focused on building a reliable Eel Fish
-supply business from Singra, Natore,
-Bangladesh.
-
+<p class="text">
+Founder and Owner of ChalonBill Eel Fish,
+based in Singra, Natore, Bangladesh.
 </p>
 
 <br>
 
-<p>
-
+<p class="text">
 For wholesale orders, product availability
-and business inquiries, please contact me
+and business inquiries, please contact us
 directly.
-
 </p>
 
 <br>
@@ -999,9 +933,8 @@ Why ChalonBill Eel Fish?
 </h2>
 
 <p class="text">
-Simple service. Fresh product. Reliable communication.
+Fresh product, simple service and reliable communication.
 </p>
-
 
 <div class="features">
 
@@ -1055,7 +988,6 @@ Fresh and natural Eel Fish from the
 ChalonBill region of Bangladesh.
 </p>
 
-
 <div class="product-box">
 
 <div class="product-info">
@@ -1063,8 +995,8 @@ ChalonBill region of Bangladesh.
 <h3>Eel Fish Supply</h3>
 
 <p>
-We supply Eel Fish for wholesale and
-business inquiries.
+We supply fresh and natural Eel Fish
+for wholesale and business inquiries.
 </p>
 
 </div>
@@ -1102,7 +1034,6 @@ From Source to Buyer
 <p class="text">
 A simple and reliable supply process.
 </p>
-
 
 <div class="steps">
 
@@ -1154,11 +1085,9 @@ Looking for Eel Fish Supply?
 </h2>
 
 <p>
-
 For wholesale quantity, availability,
 pricing and business inquiries, contact
 us directly.
-
 </p>
 
 <a class="btn btn-gold"
@@ -1194,7 +1123,6 @@ Let's Talk Business
 For wholesale orders and business inquiries,
 please contact us.
 </p>
-
 
 <div class="contact-grid">
 
@@ -1266,6 +1194,5 @@ target="_blank">
 
 </a>
 
-
 </body>
-    </html>
+</html>
