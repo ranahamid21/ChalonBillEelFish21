@@ -1,1 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>ChalonBill Eel Fish | Live Fresh Wholesale Eel Fish</title>
+
+    <meta name="description" content="ChalonBill Eel Fish - Live, Fresh and Wholesale Eel Fish from Singra, Natore, Bangladesh.">
+    <meta name="keywords" content="Eel Fish Bangladesh, ChalonBill Eel Fish, Kucha Fish, Kunchia Fish, Live Eel Fish, Fresh Eel Fish, Wholesale Eel Fish">
+    <meta name="author" content="Md Rana Hamid">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f8f5;
+            color: #173b2a;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            background: #063d25;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+        }
+
+        .nav {
+            max-width: 1200px;
+            margin: auto;
+            padding: 14px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        .brand img {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: white;
+            object-fit: cover;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #e1b94f;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 70px 20px;
+            background:
+                linear-gradient(rgba(0,45,28,0.72), rgba(0,45,28,0.78)),
+                url("eel-fish.jpg") center/cover no-repeat;
+        }
+
+        .hero-content {
+            max-width: 850px;
+            color: white;
+        }
+
+        .hero-logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #d5ad43;
+            background: white;
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.4);
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            color: #e1b94f;
+            font-size: 25px;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            margin: 7px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .btn-whatsapp {
+            background: #25d366;
+            color: white;
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(37,211,102,0.4);
+        }
+
+        .btn-gold {
+            background: #d5ad43;
+            color: #123b28;
+        }
+
+        .btn-gold:hover {
+            transform: translateY(-3px);
+            background: #efcc6a;
+        }
+
+        /* GENERAL */
+        section {
+            padding: 75px 20px;
+        }
+
+        .container {
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 12px;
+            color: #063d25;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 45px;
+            color: #607166;
+        }
+
+        /* ABOUT */
+        .about {
+            background: white;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
+            align-items: center;
+        }
+
+        .about-img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .about-text h3 {
+            font-size: 30px;
+            margin-bottom: 15px;
+            color: #063d25;
+        }
+
+        .about-text p {
+            margin-bottom: 15px;
+            color: #52665a;
+        }
+
+        /* FEATURES */
+        .features {
+            background: #eef5ef;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 32px 24px;
+            text-align: center;
+            border-radius: 18px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+            border-top: 4px solid #d5ad43;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.13);
+        }
+
+        .icon {
+            font-size: 45px;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            color: #063d25;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #66766c;
+        }
+
+        /* PRODUCT */
+        .product {
+            background: white;
+        }
+
+        .product-box {
+            max-width: 900px;
+            margin: auto;
+            background: #063d25;
+            color: white;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+        }
+
+        .product-box img {
+            width: 100%;
+            height: 430px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 35px;
+            text-align: center;
+        }
+
+        .product-info h3 {
+            color: #e1b94f;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .tags {
+            margin: 20px 0;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 8px 16px;
+            margin: 5px;
+            border: 1px solid #d5ad43;
+            border-radius: 20px;
+            color: #f0d37b;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: #eef5ef;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 18px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+        }
+
+        .contact-card .icon {
+            font-size: 38px;
+        }
+
+        .contact-card h3 {
+            color: #063d25;
+            margin-bottom: 8px;
+        }
+
+        .contact-card a {
+            color: #176b43;
+            text-decoration: none;
+            word-break: break-word;
+        }
+
+        /* CTA */
+        .cta {
+            background: #063d25;
+            color: white;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 38px;
+            color: #e1b94f;
+            margin-bottom: 12px;
+        }
+
+        .cta p {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #032719;
+            color: #c9d5ce;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        footer strong {
+            color: #e1b94f;
+        }
+
+        .footer-logo {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: white;
+            margin-bottom: 12px;
+        }
+
+        /* WHATSAPP FLOAT */
+        .whatsapp-float {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 62px;
+            height: 62px;
+            background: #25d366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            text-decoration: none;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            z-index: 999;
+        }
+
+        /* MOBILE */
+        @media (max-width: 800px) {
+
+            .nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+
+            .hero {
+                min-height: 580px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero h2 {
+                font-size: 20px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .product-box img {
+                height: 280px;
+            }
+
+            .section-title {
+                font-size: 30px;
+            }
+
+            .cta h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="nav">
+
+        <!-- আপনার Logo ফাইলের নাম logo.png রাখুন -->
+        <div class="brand">
+            <img src="logo.png" alt="ChalonBill Eel Fish Logo">
+            <span>ChalonBill Eel Fish</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#product">Product</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <img class="hero-logo"
+             src="logo.png"
+             alt="ChalonBill Eel Fish Logo">
+
+        <h1>CHALONBILL EEL FISH</h1>
+
+        <h2>LIVE • FRESH • WHOLESALE</h2>
+
+        <p>
+            Premium quality natural Eel Fish from the famous
+            ChalonBill region of Bangladesh.
+            Fresh, healthy and available for wholesale supply.
+        </p>
+
+        <div class="buttons">
+            <a class="btn btn-whatsapp"
+               href="https://wa.me/8801740047835"
+               target="_blank">
+                💬 WhatsApp Us
+            </a>
+
+            <a class="btn btn-gold" href="#contact">
+                📞 Contact Us
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+    <div class="container">
+
+        <h2 class="section-title">About Our Business</h2>
+
+        <p class="section-subtitle">
+            Natural Eel Fish sourced from the ChalonBill region,
+            Singra, Natore, Bangladesh.
+        </p>
+
+        <div class="about-grid">
+
+            <div>
+                <img class="about-img"
+                     src="eel-fish.jpg"
+                     alt="Fresh Eel Fish">
+            </div>
+
+            <div class="about-text">
+
+                <h3>ChalonBill Eel Fish</h3>
+
+                <p>
+                    We supply natural and fresh Eel Fish from
+                    Singra, Natore, Bangladesh.
+                </p>
+
+                <p>
+                    Our goal is to provide quality Eel Fish for
+                    wholesalers, traders, restaurants and
+                    interested buyers.
+                </p>
+
+                <p>
+                    We focus on freshness, quality and reliable
+                    communication with our customers.
+                </p>
+
+                <p>
+                    <strong>Owner:</strong> Md Rana Hamid
+                </p>
+
+                <a class="btn btn-whatsapp"
+                   href="https://wa.me/8801740047835"
+                   target="_blank">
+                    Contact on WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURES -->
+<section class="features">
+
+    <div class="container">
+
+        <h2 class="section-title">Why Choose Us?</h2>
+
+        <p class="section-subtitle">
+            Quality and freshness are our first priority.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">🐟</div>
+                <h3>Fresh Eel Fish</h3>
+                <p>
+                    Fresh and naturally sourced Eel Fish
+                    from the ChalonBill area.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🌿</div>
+                <h3>100% Natural</h3>
+                <p>
+                    Natural fish sourced from the wetlands
+                    of Bangladesh.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📦</div>
+                <h3>Wholesale Supply</h3>
+                <p>
+                    Wholesale supply available for
+                    interested buyers and traders.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PRODUCT -->
+<section class="product" id="product">
+
+    <div class="container">
+
+        <h2 class="section-title">Our Product</h2>
+
+        <p class="section-subtitle">
+            Premium natural Eel Fish from ChalonBill.
+        </p>
+
+        <div class="product-box">
+
+            <img src="eel-fish.jpg"
+                 alt="ChalonBill Fresh Eel Fish">
+
+            <div class="product-info">
+
+                <h3>Fresh Eel Fish</h3>
+
+                <p>
+                    Live • Fresh • Natural • Wholesale
+                </p>
+
+                <div class="tags">
+                    <span class="tag">Live Fish</span>
+                    <span class="tag">Fresh Fish</span>
+                    <span class="tag">Natural</span>
+                    <span class="tag">Wholesale</span>
+                </div>
+
+                <a class="btn btn-gold"
+                   href="https://wa.me/8801740047835?text=Hello%20ChalonBill%20Eel%20Fish%2C%20I%20am%20interested%20in%20your%20Eel%20Fish."
+                   target="_blank">
+                    💬 Make an Inquiry
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <h2 class="section-title">Contact Us</h2>
+
+        <p class="section-subtitle">
+            For wholesale inquiries and business discussions,
+            please contact us.
+        </p>
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+
+                <div class="icon">👤</div>
+
+                <h3>Owner</h3>
+
+                <p>Md Rana Hamid</p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="icon">💬</div>
+
+                <h3>WhatsApp</h3>
+
+                <a href="https://wa.me/8801740047835"
+                   target="_blank">
+                    +880 1740-047835
+                </a>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="icon">📍</div>
+
+                <h3>Location</h3>
+
+                <p>
+                    Singra, Natore,<br>
+                    Rajshahi, Bangladesh
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="icon">✉️</div>
+
+                <h3>Email</h3>
+
+                <a href="mailto:rhranahamid21@gmail.com">
+                    rhranahamid21@gmail.com
+                </a>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="icon">🐟</div>
+
+                <h3>Product</h3>
+
+                <p>
+                    Natural Eel Fish
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="icon">📦</div>
+
+                <h3>Business</h3>
+
+                <p>
+                    Live & Fresh Wholesale Supply
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+<section class="cta">
+
+    <div class="container">
+
+        <h2>Looking for Fresh Eel Fish?</h2>
+
+        <p>
+            Contact ChalonBill Eel Fish today for
+            wholesale inquiries.
+        </p>
+
+        <a class="btn btn-whatsapp"
+           href="https://wa.me/8801740047835?text=Hello%20ChalonBill%20Eel%20Fish%2C%20I%20want%20to%20know%20about%20your%20Eel%20Fish."
+           target="_blank">
+            💬 Chat on WhatsApp
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <img class="footer-logo"
+         src="logo.png"
+         alt="ChalonBill Eel Fish">
+
+    <p>
+        <strong>CHALONBILL EEL FISH</strong>
+    </p>
+
+    <p>
+        LIVE • FRESH • WHOLESALE
+    </p>
+
+    <p>
+        Singra, Natore, Rajshahi, Bangladesh
+    </p>
+
+    <br>
+
+    <p>
+        © 2026 ChalonBill Eel Fish. All Rights Reserved.
+    </p>
+
+    <p>
+        Owner: Md Rana Hamid
+    </p>
+
+</footer>
+
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a class="whatsapp-float"
+   href="https://wa.me/8801740047835"
+   target="_blank"
+   aria-label="WhatsApp">
+    ☎
+</a>
+
+</body>
+</html>
