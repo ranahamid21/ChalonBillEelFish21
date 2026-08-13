@@ -5,9 +5,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ChalonBill Eel Fish | Bangladesh</title>
+<title>ChalonBill Eel Fish | Premium Eel Fish Supplier Bangladesh</title>
 
-<meta name="description" content="ChalonBill Eel Fish - Live, Fresh and Wholesale Eel Fish from Singra, Natore, Bangladesh.">
+<meta name="description" content="ChalonBill Eel Fish - Live, Fresh and Natural Eel Fish supplier from Singra, Natore, Bangladesh. Wholesale inquiries welcome.">
 
 <style>
 
@@ -25,6 +25,16 @@ body{
     font-family:Arial, Helvetica, sans-serif;
     background:#f7f8f5;
     color:#173b2a;
+    line-height:1.6;
+}
+
+:root{
+    --green:#063b26;
+    --dark:#021e13;
+    --gold:#d8b451;
+    --light:#f4f6f2;
+    --text:#65736c;
+    --white:#ffffff;
 }
 
 /* ================= HEADER ================= */
@@ -34,15 +44,15 @@ header{
     top:0;
     left:0;
     width:100%;
-    z-index:1000;
-    background:#063b26;
-    border-bottom:1px solid #c9a33d;
+    z-index:9999;
+    background:rgba(6,59,38,.97);
+    border-bottom:1px solid var(--gold);
 }
 
 .header{
     max-width:1150px;
+    height:78px;
     margin:auto;
-    height:76px;
     padding:0 20px;
 
     display:flex;
@@ -58,73 +68,67 @@ header{
 }
 
 .logo img{
-    width:52px;
-    height:52px;
-    object-fit:cover;
+    width:54px;
+    height:54px;
     border-radius:50%;
+    object-fit:cover;
+    border:2px solid var(--gold);
     background:white;
-    border:2px solid #d6b24b;
 }
 
-.logo-text strong{
+.logo strong{
+    display:block;
     color:white;
-    font-size:18px;
+    font-size:17px;
     letter-spacing:1px;
 }
 
-.logo-text span{
+.logo span{
     display:block;
-    color:#d8b451;
-    font-size:10px;
+    color:var(--gold);
+    font-size:9px;
     letter-spacing:2px;
-    margin-top:4px;
+    margin-top:2px;
 }
 
 nav{
     display:flex;
-    gap:25px;
+    gap:24px;
 }
 
 nav a{
     color:white;
     text-decoration:none;
-    font-size:13px;
+    font-size:12px;
     font-weight:bold;
+    letter-spacing:.5px;
 }
 
 nav a:hover{
-    color:#d8b451;
+    color:var(--gold);
 }
 
 /* ================= HERO ================= */
 
 .hero{
-    padding-top:76px;
-    min-height:680px;
-
-    background:#063b26;
+    padding-top:78px;
+    background:var(--green);
 }
 
 .hero-inner{
     max-width:1150px;
+    min-height:650px;
     margin:auto;
-
-    min-height:604px;
+    padding:65px 20px;
 
     display:grid;
     grid-template-columns:1fr 1fr;
     align-items:center;
-    gap:50px;
-
-    padding:55px 20px;
+    gap:55px;
 }
 
-.hero-text{
-    color:white;
-}
-
-.small-title{
-    color:#d8b451;
+.hero-tag{
+    color:var(--gold);
     font-size:12px;
     font-weight:bold;
     letter-spacing:3px;
@@ -132,24 +136,25 @@ nav a:hover{
 }
 
 .hero h1{
-    font-size:62px;
-    line-height:1.02;
-    margin-bottom:20px;
+    color:white;
+    font-size:64px;
+    line-height:1;
+    margin-bottom:22px;
 }
 
 .hero h1 span{
-    color:#d8b451;
+    color:var(--gold);
 }
 
-.hero-description{
-    color:#d7e2dc;
-    font-size:18px;
-    line-height:1.8;
-    max-width:550px;
-    margin-bottom:28px;
+.hero-text p{
+    color:#d5e1db;
+    font-size:17px;
+    line-height:1.9;
+    max-width:540px;
+    margin-bottom:30px;
 }
 
-.hero-buttons{
+.buttons{
     display:flex;
     gap:12px;
     flex-wrap:wrap;
@@ -157,310 +162,486 @@ nav a:hover{
 
 .btn{
     display:inline-block;
+    padding:14px 24px;
     text-decoration:none;
-    padding:14px 25px;
     border-radius:5px;
+    font-size:13px;
     font-weight:bold;
-    font-size:14px;
     transition:.3s;
 }
 
 .btn-gold{
-    background:#d8b451;
-    color:#063b26;
+    background:var(--gold);
+    color:var(--green);
 }
 
 .btn-gold:hover{
-    background:#efd276;
     transform:translateY(-2px);
+    background:#edcf6c;
 }
 
-.btn-white{
+.btn-outline{
     border:1px solid white;
     color:white;
 }
 
-.btn-white:hover{
+.btn-outline:hover{
     background:white;
-    color:#063b26;
+    color:var(--green);
 }
 
-/* ONE EEL IMAGE ONLY */
+/* ONE MAIN FISH IMAGE */
 
-.hero-image{
+.hero-photo{
     position:relative;
 }
 
-.hero-image img{
+.hero-photo img{
     width:100%;
-    height:470px;
+    height:455px;
     object-fit:cover;
-    border-radius:10px;
     display:block;
-
-    border:5px solid rgba(216,180,81,.7);
-
-    box-shadow:
-    0 20px 50px rgba(0,0,0,.35);
+    border-radius:10px;
+    border:4px solid rgba(216,180,81,.7);
+    box-shadow:0 25px 60px rgba(0,0,0,.35);
 }
 
-.image-label{
+.photo-caption{
     position:absolute;
-    bottom:18px;
     left:18px;
     right:18px;
+    bottom:18px;
 
-    background:rgba(3,39,25,.9);
+    background:rgba(2,30,19,.92);
+    padding:14px 17px;
     color:white;
-
-    padding:15px;
-    border-left:3px solid #d8b451;
-
-    font-size:13px;
+    border-left:3px solid var(--gold);
 }
 
-.image-label strong{
-    color:#d8b451;
+.photo-caption strong{
     display:block;
-    margin-bottom:4px;
+    color:var(--gold);
+    font-size:12px;
+    letter-spacing:2px;
 }
 
-/* ================= INTRO ================= */
+/* ================= TRUST BAR ================= */
 
-.intro{
+.trust{
     background:white;
-    padding:70px 20px;
-    text-align:center;
+    border-bottom:1px solid #e4e8e3;
 }
 
-.intro-inner{
-    max-width:850px;
+.trust-inner{
+    max-width:1000px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
+
+.trust-item{
+    padding:25px 12px;
+    text-align:center;
+    border-right:1px solid #e4e8e3;
+}
+
+.trust-item:last-child{
+    border-right:none;
+}
+
+.trust-item strong{
+    display:block;
+    color:var(--green);
+    font-size:14px;
+}
+
+.trust-item span{
+    color:var(--text);
+    font-size:11px;
+}
+
+/* ================= SECTION ================= */
+
+section:not(.hero){
+    padding:85px 20px;
+}
+
+.container{
+    max-width:1050px;
     margin:auto;
 }
 
-.intro h2{
-    color:#063b26;
-    font-size:36px;
+.label{
+    color:#ad8529;
+    font-size:11px;
+    font-weight:bold;
+    letter-spacing:3px;
+    margin-bottom:10px;
+}
+
+.section-title{
+    color:var(--green);
+    font-size:40px;
+    line-height:1.15;
     margin-bottom:18px;
 }
 
-.intro p{
-    color:#66736c;
-    font-size:17px;
+.section-text{
+    color:var(--text);
+    font-size:16px;
     line-height:1.9;
 }
 
 /* ================= ABOUT ================= */
 
 .about{
-    background:#f2f5f1;
-    padding:80px 20px;
+    background:white;
 }
 
-.about-inner{
-    max-width:1000px;
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.about-box{
+    background:var(--light);
+    padding:35px;
+    border-left:4px solid var(--gold);
+}
+
+.about-box h3{
+    color:var(--green);
+    margin-bottom:12px;
+}
+
+.about-box p{
+    color:var(--text);
+    font-size:14px;
+    line-height:1.8;
+}
+
+/* ================= WHY CHOOSE US ================= */
+
+.why{
+    background:#f2f5f1;
+}
+
+.center{
+    text-align:center;
+}
+
+.center .section-text{
+    max-width:700px;
     margin:auto;
 }
 
-.section-label{
-    color:#b18a2d;
-    font-size:12px;
-    font-weight:bold;
-    letter-spacing:3px;
-    margin-bottom:10px;
-}
+.features{
+    margin-top:40px;
 
-.about h2{
-    color:#063b26;
-    font-size:38px;
-    margin-bottom:20px;
-}
-
-.about p{
-    color:#637069;
-    font-size:16px;
-    line-height:1.9;
-    margin-bottom:16px;
-}
-
-.about-points{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:15px;
-    margin-top:30px;
+    grid-template-columns:repeat(4,1fr);
+    gap:16px;
 }
 
-.point{
+.feature{
     background:white;
-    padding:22px;
-    border-left:3px solid #d8b451;
-    box-shadow:0 5px 20px rgba(0,0,0,.05);
+    padding:30px 20px;
+    text-align:center;
+    border:1px solid #e2e7e1;
+    transition:.3s;
 }
 
-.point strong{
-    color:#063b26;
-    display:block;
-    margin-bottom:5px;
+.feature:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
 }
 
-.point span{
-    color:#68766e;
+.feature-icon{
+    font-size:32px;
+    margin-bottom:13px;
+}
+
+.feature h3{
+    color:var(--green);
+    font-size:16px;
+    margin-bottom:7px;
+}
+
+.feature p{
+    color:var(--text);
     font-size:13px;
 }
 
 /* ================= PRODUCT ================= */
 
-.product{
+.products{
     background:white;
-    padding:80px 20px;
 }
 
-.product-inner{
-    max-width:1000px;
-    margin:auto;
-    text-align:center;
+.product-card{
+    margin-top:40px;
+    background:var(--green);
+    border-radius:8px;
+    padding:40px;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+    align-items:center;
 }
 
-.product h2{
-    color:#063b26;
-    font-size:38px;
+.product-card h3{
+    color:white;
+    font-size:30px;
     margin-bottom:12px;
 }
 
-.product-intro{
-    color:#66736c;
+.product-card p{
+    color:#d7e3dc;
+    font-size:15px;
     line-height:1.8;
-    max-width:650px;
-    margin:0 auto 35px;
 }
 
-.product-info{
+.product-list{
+    list-style:none;
+}
+
+.product-list li{
+    color:white;
+    padding:10px 0;
+    border-bottom:1px solid rgba(255,255,255,.15);
+}
+
+.product-list li::before{
+    content:"✓";
+    color:var(--gold);
+    font-weight:bold;
+    margin-right:10px;
+}
+
+/* ================= PROCESS ================= */
+
+.process{
+    background:#f2f5f1;
+}
+
+.steps{
+    margin-top:40px;
+
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:15px;
 }
 
-.product-box{
-    padding:25px 15px;
-    background:#f5f7f4;
-    border:1px solid #e0e5df;
-    border-radius:6px;
+.step{
+    position:relative;
+    background:white;
+    padding:28px 18px;
+    text-align:center;
+    border-top:3px solid var(--gold);
 }
 
-.product-box .icon{
+.number{
+    color:var(--gold);
     font-size:28px;
-    margin-bottom:10px;
+    font-weight:bold;
 }
 
-.product-box strong{
-    display:block;
-    color:#063b26;
-    margin-bottom:5px;
+.step h3{
+    color:var(--green);
+    margin:8px 0;
+    font-size:16px;
 }
 
-.product-box span{
-    color:#68766e;
+.step p{
+    color:var(--text);
     font-size:13px;
 }
 
-/* ================= CONTACT ================= */
+/* ================= QUALITY ================= */
 
-.contact{
-    background:#063b26;
+.quality{
+    background:var(--green);
     color:white;
-    padding:80px 20px;
 }
 
-.contact-inner{
-    max-width:1000px;
-    margin:auto;
+.quality .section-title{
+    color:white;
 }
 
-.contact-heading{
-    text-align:center;
-    margin-bottom:45px;
+.quality .section-text{
+    color:#d7e3dc;
 }
 
-.contact-heading .section-label{
-    color:#d8b451;
-}
+.quality-grid{
+    margin-top:35px;
 
-.contact-heading h2{
-    font-size:40px;
-}
-
-.contact-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:18px;
 }
 
-.contact-box{
+.quality-box{
     border:1px solid rgba(216,180,81,.4);
-    padding:28px 20px;
-    text-align:center;
-    border-radius:6px;
+    padding:25px;
 }
 
-.contact-box .icon{
+.quality-box strong{
+    display:block;
+    color:var(--gold);
+    margin-bottom:8px;
+}
+
+.quality-box span{
+    color:#d5e1db;
+    font-size:13px;
+}
+
+/* ================= WHOLESALE ================= */
+
+.wholesale{
+    background:white;
+}
+
+.wholesale-box{
+    margin-top:35px;
+    background:#f4f6f2;
+    padding:45px;
+    border:1px solid #e0e6df;
+    text-align:center;
+}
+
+.wholesale-box h3{
+    color:var(--green);
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.wholesale-box p{
+    color:var(--text);
+    max-width:650px;
+    margin:0 auto 25px;
+}
+
+/* ================= GALLERY ================= */
+
+.gallery{
+    background:#f2f5f1;
+}
+
+.gallery-grid{
+    margin-top:35px;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.gallery-item{
+    height:220px;
+    border-radius:7px;
+    overflow:hidden;
+    background:white;
+    border:1px solid #e0e5df;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#849088;
+    text-align:center;
+    padding:20px;
+}
+
+.gallery-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    background:var(--green);
+}
+
+.contact .section-title{
+    color:white;
+}
+
+.contact .section-text{
+    color:#d5e1db;
+}
+
+.contact-grid{
+    margin-top:40px;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.contact-box{
+    border:1px solid rgba(216,180,81,.4);
+    padding:27px 18px;
+    text-align:center;
+}
+
+.contact-icon{
     font-size:27px;
-    margin-bottom:12px;
+    margin-bottom:10px;
 }
 
 .contact-box strong{
     display:block;
-    color:#d8b451;
-    margin-bottom:8px;
+    color:var(--gold);
+    margin-bottom:7px;
+    font-size:12px;
+    letter-spacing:1px;
 }
 
 .contact-box span,
 .contact-box a{
-    color:#dce5df;
+    color:#dce6e0;
     text-decoration:none;
     font-size:14px;
-    line-height:1.6;
     word-break:break-word;
-}
-
-.contact-button{
-    text-align:center;
-    margin-top:35px;
 }
 
 /* ================= FOOTER ================= */
 
 footer{
-    background:#021e13;
-    color:#aebdb5;
+    background:var(--dark);
+    color:#aebcb5;
     text-align:center;
-    padding:35px 20px;
+    padding:40px 20px;
 }
 
 .footer-logo{
     width:65px;
     height:65px;
-    object-fit:cover;
     border-radius:50%;
+    object-fit:cover;
+    border:2px solid var(--gold);
     background:white;
-    border:2px solid #d8b451;
     margin-bottom:12px;
 }
 
 footer h3{
     color:white;
-    font-size:17px;
     letter-spacing:2px;
-    margin-bottom:5px;
+    font-size:17px;
 }
 
 footer .gold{
-    color:#d8b451;
-    font-size:11px;
+    color:var(--gold);
+    font-size:10px;
     letter-spacing:2px;
 }
 
 footer p{
-    margin-top:10px;
+    margin-top:8px;
     font-size:12px;
 }
 
@@ -485,9 +666,8 @@ footer p{
     text-decoration:none;
     font-size:27px;
 
-    box-shadow:0 6px 20px rgba(0,0,0,.3);
-
-    z-index:9999;
+    box-shadow:0 7px 25px rgba(0,0,0,.3);
+    z-index:99999;
 }
 
 /* ================= MOBILE ================= */
@@ -499,15 +679,15 @@ footer p{
     }
 
     .logo img{
-        width:47px;
-        height:47px;
+        width:48px;
+        height:48px;
     }
 
-    .logo-text strong{
-        font-size:15px;
+    .logo strong{
+        font-size:14px;
     }
 
-    .logo-text span{
+    .logo span{
         font-size:8px;
     }
 
@@ -521,65 +701,67 @@ footer p{
 
     .hero-inner{
         grid-template-columns:1fr;
-        gap:35px;
-        padding:45px 18px 55px;
         min-height:auto;
+        padding:48px 18px 55px;
+        gap:35px;
     }
 
     .hero h1{
-        font-size:44px;
+        font-size:43px;
     }
 
-    .hero-description{
-        font-size:16px;
-    }
-
-    .hero-image img{
-        height:350px;
-    }
-
-    .intro{
-        padding:60px 20px;
-    }
-
-    .intro h2{
-        font-size:30px;
-    }
-
-    .intro p{
+    .hero-text p{
         font-size:15px;
     }
 
-    .about{
-        padding:60px 20px;
+    .hero-photo img{
+        height:330px;
     }
 
-    .about h2{
-        font-size:31px;
-    }
-
-    .about-points{
-        grid-template-columns:1fr;
-    }
-
-    .product{
-        padding:60px 20px;
-    }
-
-    .product h2{
-        font-size:31px;
-    }
-
-    .product-info{
+    .trust-inner{
         grid-template-columns:1fr 1fr;
     }
 
-    .contact{
-        padding:60px 20px;
+    .trust-item{
+        border-bottom:1px solid #e4e8e3;
     }
 
-    .contact-heading h2{
+    section:not(.hero){
+        padding:65px 18px;
+    }
+
+    .section-title{
         font-size:31px;
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .features{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .product-card{
+        grid-template-columns:1fr;
+        padding:30px 22px;
+    }
+
+    .steps{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .quality-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .gallery-item{
+        height:170px;
     }
 
     .contact-grid{
@@ -591,20 +773,28 @@ footer p{
 @media(max-width:450px){
 
     .hero h1{
-        font-size:39px;
+        font-size:38px;
     }
 
-    .hero-image img{
-        height:300px;
-    }
-
-    .product-info{
-        grid-template-columns:1fr;
+    .buttons{
+        flex-direction:column;
     }
 
     .btn{
         width:100%;
         text-align:center;
+    }
+
+    .features{
+        grid-template-columns:1fr;
+    }
+
+    .steps{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr;
     }
 
 }
@@ -616,7 +806,7 @@ footer p{
 <body>
 
 
-<!-- HEADER -->
+<!-- ================= HEADER ================= -->
 
 <header>
 
@@ -624,9 +814,9 @@ footer p{
 
 <a href="#home" class="logo">
 
-<img src="logo.png" alt="ChalonBill Eel Fish">
+<img src="logo.png" alt="ChalonBill Eel Fish Logo">
 
-<div class="logo-text">
+<div>
 
 <strong>CHALONBILL EEL FISH</strong>
 
@@ -636,15 +826,12 @@ footer p{
 
 </a>
 
-
 <nav>
 
 <a href="#home">HOME</a>
-
 <a href="#about">ABOUT</a>
-
-<a href="#product">PRODUCT</a>
-
+<a href="#products">PRODUCT</a>
+<a href="#quality">QUALITY</a>
 <a href="#contact">CONTACT</a>
 
 </nav>
@@ -654,16 +841,15 @@ footer p{
 </header>
 
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 
 <section class="hero" id="home">
 
 <div class="hero-inner">
 
-
 <div class="hero-text">
 
-<div class="small-title">
+<div class="hero-tag">
 PREMIUM BANGLADESHI EEL FISH
 </div>
 
@@ -672,30 +858,28 @@ CHALONBILL<br>
 <span>EEL FISH</span>
 </h1>
 
-<p class="hero-description">
+<p>
 
 Live, fresh and natural Eel Fish from
 Singra, Natore, Bangladesh.
 
-We supply quality Eel Fish for wholesale
-buyers and business inquiries.
+Reliable supply for wholesale buyers
+and business customers.
 
 </p>
 
+<div class="buttons">
 
-<div class="hero-buttons">
+<a class="btn btn-gold"
+href="https://wa.me/8801740047835"
+target="_blank">
 
-<a href="https://wa.me/8801740047835"
-target="_blank"
-class="btn btn-gold">
-
-💬 WhatsApp Us
+💬 CONTACT SUPPLIER
 
 </a>
 
-
-<a href="#product"
-class="btn btn-white">
+<a class="btn btn-outline"
+href="#products">
 
 VIEW PRODUCT
 
@@ -706,16 +890,16 @@ VIEW PRODUCT
 </div>
 
 
-<!-- EEL FISH IMAGE ONLY HERE -->
+<!-- MAIN EEL IMAGE: ONLY ONCE -->
 
-<div class="hero-image">
+<div class="hero-photo">
 
 <img src="eel-fish.jpg"
 alt="Fresh Eel Fish from ChalonBill">
 
-<div class="image-label">
+<div class="photo-caption">
 
-<strong>CHALONBILL • NATORE</strong>
+<strong>CHALONBILL • NATORE • BANGLADESH</strong>
 
 Live • Fresh • Natural Eel Fish
 
@@ -723,102 +907,104 @@ Live • Fresh • Natural Eel Fish
 
 </div>
 
-
 </div>
 
 </section>
 
 
-<!-- INTRO -->
+<!-- ================= TRUST BAR ================= -->
 
-<section class="intro">
+<div class="trust">
 
-<div class="intro-inner">
+<div class="trust-inner">
 
-<div class="section-label">
-WELCOME TO CHALONBILL EEL FISH
+<div class="trust-item">
+<strong>LIVE & FRESH</strong>
+<span>Quality Fish Supply</span>
 </div>
 
-<h2>
-Natural Eel Fish From Bangladesh
-</h2>
+<div class="trust-item">
+<strong>NATURAL SOURCE</strong>
+<span>ChalonBill Region</span>
+</div>
 
-<p>
+<div class="trust-item">
+<strong>WHOLESALE</strong>
+<span>Bulk Buyers Welcome</span>
+</div>
 
-We are a local Eel Fish supply business based in
-Singra, Natore, Bangladesh. Our focus is fresh,
-natural and quality Eel Fish supply for wholesale
-buyers and business customers.
-
-</p>
+<div class="trust-item">
+<strong>BANGLADESH</strong>
+<span>Singra, Natore</span>
+</div>
 
 </div>
 
-</section>
+</div>
 
 
-<!-- ABOUT -->
+<!-- ================= ABOUT ================= -->
 
 <section class="about" id="about">
 
-<div class="about-inner">
+<div class="container">
 
-<div class="section-label">
-ABOUT OUR BUSINESS
+<div class="about-grid">
+
+<div>
+
+<div class="label">
+ABOUT CHALONBILL EEL FISH
 </div>
 
-<h2>
-Freshness You Can Trust
+<h2 class="section-title">
+Fresh Fish. Reliable Supply.
 </h2>
 
-<p>
+<p class="section-text">
 
-ChalonBill Eel Fish is based in Singra, Natore.
-We collect and supply natural Eel Fish from the
-ChalonBill region of Bangladesh.
-
-</p>
-
-<p>
-
-Our goal is to provide quality fish and maintain
-direct, reliable communication with our customers
-and business partners.
+ChalonBill Eel Fish is a local Eel Fish
+supply business based in Singra, Natore,
+Bangladesh.
 
 </p>
 
+<br>
 
-<div class="about-points">
+<p class="section-text">
 
-<div class="point">
+We focus on supplying natural and fresh
+Eel Fish to wholesale buyers and business
+customers.
 
-<strong>100% Natural</strong>
-
-<span>
-Naturally sourced Eel Fish.
-</span>
+</p>
 
 </div>
 
 
-<div class="point">
+<div class="about-box">
 
-<strong>Fresh Supply</strong>
+<h3>
+Our Business
+</h3>
 
-<span>
-Fresh Eel Fish for buyers.
-</span>
+<p>
 
-</div>
+We aim to build long-term business
+relationships by providing quality fish,
+clear communication and dependable supply.
 
+</p>
 
-<div class="point">
+<br>
 
-<strong>Wholesale</strong>
+<p>
 
-<span>
-Bulk supply for serious buyers.
-</span>
+For current availability, quantity and
+wholesale inquiries, please contact us
+directly.
+
+</p>
 
 </div>
 
@@ -829,83 +1015,139 @@ Bulk supply for serious buyers.
 </section>
 
 
-<!-- PRODUCT -->
+<!-- ================= WHY CHOOSE US ================= -->
 
-<section class="product" id="product">
+<section class="why">
 
-<div class="product-inner">
+<div class="container center">
 
-<div class="section-label">
+<div class="label">
+WHY CHOOSE US
+</div>
+
+<h2 class="section-title">
+Why ChalonBill Eel Fish?
+</h2>
+
+<p class="section-text">
+
+Our focus is simple — quality natural Eel Fish
+and reliable communication with serious buyers.
+
+</p>
+
+
+<div class="features">
+
+<div class="feature">
+
+<div class="feature-icon">🐟</div>
+
+<h3>Fresh Supply</h3>
+
+<p>
+Fresh Eel Fish supplied according to availability.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">🌿</div>
+
+<h3>Natural Source</h3>
+
+<p>
+Naturally sourced from the ChalonBill region.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">📦</div>
+
+<h3>Wholesale</h3>
+
+<p>
+Bulk supply for serious business buyers.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">🤝</div>
+
+<h3>Reliable</h3>
+
+<p>
+Direct communication and business support.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= PRODUCT ================= -->
+
+<section class="products" id="products">
+
+<div class="container">
+
+<div class="label">
 OUR PRODUCT
 </div>
 
-<h2>
-Eel Fish Supply
+<h2 class="section-title">
+Premium Eel Fish Supply
 </h2>
 
-<p class="product-intro">
+<p class="section-text">
 
-Our Eel Fish is available for wholesale
-business inquiries. Contact us directly
-for current availability and details.
+We supply natural Eel Fish for wholesale
+and business inquiries.
 
 </p>
 
 
-<div class="product-info">
+<div class="product-card">
 
+<div>
 
-<div class="product-box">
+<h3>
+Eel Fish
+</h3>
 
-<div class="icon">🐟</div>
+<p>
 
-<strong>Live / Fresh</strong>
+Live and fresh Eel Fish from the
+ChalonBill region of Bangladesh.
 
-<span>
-Fresh Eel Fish
-</span>
+Contact us for current availability,
+quantity and wholesale information.
 
-</div>
-
-
-<div class="product-box">
-
-<div class="icon">🌿</div>
-
-<strong>Natural</strong>
-
-<span>
-Naturally Sourced
-</span>
+</p>
 
 </div>
 
 
-<div class="product-box">
+<ul class="product-list">
 
-<div class="icon">📦</div>
+<li>Natural Eel Fish</li>
+<li>Fresh Supply</li>
+<li>Wholesale Quantity</li>
+<li>Business Inquiries</li>
 
-<strong>Wholesale</strong>
-
-<span>
-Bulk Supply
-</span>
-
-</div>
-
-
-<div class="product-box">
-
-<div class="icon">🇧🇩</div>
-
-<strong>Bangladesh</strong>
-
-<span>
-Singra, Natore
-</span>
-
-</div>
-
+</ul>
 
 </div>
 
@@ -914,32 +1156,263 @@ Singra, Natore
 </section>
 
 
-<!-- CONTACT -->
+<!-- ================= PROCESS ================= -->
+
+<section class="process">
+
+<div class="container center">
+
+<div class="label">
+OUR SUPPLY PROCESS
+</div>
+
+<h2 class="section-title">
+From Source to Buyer
+</h2>
+
+<p class="section-text">
+Our simple supply process helps maintain
+quality and reliable communication.
+</p>
+
+
+<div class="steps">
+
+<div class="step">
+
+<div class="number">01</div>
+
+<h3>Collection</h3>
+
+<p>
+Natural Eel Fish collection.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="number">02</div>
+
+<h3>Selection</h3>
+
+<p>
+Fish are checked and selected.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="number">03</div>
+
+<h3>Preparation</h3>
+
+<p>
+Prepared according to buyer requirements.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="number">04</div>
+
+<h3>Supply</h3>
+
+<p>
+Wholesale supply to buyers.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= QUALITY ================= -->
+
+<section class="quality" id="quality">
+
+<div class="container">
+
+<div class="label">
+QUALITY & FRESHNESS
+</div>
+
+<h2 class="section-title">
+Quality Is Our Priority
+</h2>
+
+<p class="section-text">
+
+We understand that freshness and reliable
+supply are important for fish buyers.
+We therefore focus on quality handling
+and direct communication.
+
+</p>
+
+
+<div class="quality-grid">
+
+<div class="quality-box">
+
+<strong>Natural Source</strong>
+
+<span>
+Eel Fish sourced from the ChalonBill region.
+</span>
+
+</div>
+
+
+<div class="quality-box">
+
+<strong>Freshness Focus</strong>
+
+<span>
+We focus on maintaining freshness during supply.
+</span>
+
+</div>
+
+
+<div class="quality-box">
+
+<strong>Buyer Communication</strong>
+
+<span>
+Direct contact for quantity and business inquiries.
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= WHOLESALE ================= -->
+
+<section class="wholesale">
+
+<div class="container">
+
+<div class="wholesale-box">
+
+<div class="label">
+WHOLESALE & BUSINESS
+</div>
+
+<h3>
+Looking for Eel Fish Supply?
+</h3>
+
+<p>
+
+If you are a wholesale buyer, trader,
+restaurant, fish business or other buyer,
+contact us directly for availability and
+business inquiries.
+
+</p>
+
+<a class="btn btn-gold"
+href="https://wa.me/8801740047835?text=Hello%20ChalonBill%20Eel%20Fish%2C%20I%20am%20interested%20in%20wholesale%20Eel%20Fish%20supply."
+target="_blank">
+
+💬 WHOLESALE INQUIRY
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= GALLERY ================= -->
+
+<section class="gallery">
+
+<div class="container center">
+
+<div class="label">
+OUR GALLERY
+</div>
+
+<h2 class="section-title">
+ChalonBill Eel Fish
+</h2>
+
+<p class="section-text">
+Real business photos can be added here.
+</p>
+
+
+<div class="gallery-grid">
+
+<!-- এখানে পরে নতুন ছবি যোগ করতে পারবে -->
+
+<div class="gallery-item">
+📷<br>
+Add Collection Photo
+</div>
+
+<div class="gallery-item">
+📷<br>
+Add Fresh Fish Photo
+</div>
+
+<div class="gallery-item">
+📷<br>
+Add Supply Photo
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
 
 <section class="contact" id="contact">
 
-<div class="contact-inner">
+<div class="container center">
 
-
-<div class="contact-heading">
-
-<div class="section-label">
-CONTACT US
+<div class="label">
+CONTACT CHALONBILL EEL FISH
 </div>
 
-<h2>
+<h2 class="section-title">
 Let's Talk Business
 </h2>
 
-</div>
+<p class="section-text">
+
+For wholesale orders, availability and
+business inquiries, contact us directly.
+
+</p>
 
 
 <div class="contact-grid">
 
-
 <div class="contact-box">
 
-<div class="icon">👤</div>
+<div class="contact-icon">👤</div>
 
 <strong>OWNER</strong>
 
@@ -952,7 +1425,7 @@ Md Rana Hamid
 
 <div class="contact-box">
 
-<div class="icon">📱</div>
+<div class="contact-icon">📱</div>
 
 <strong>WHATSAPP</strong>
 
@@ -968,7 +1441,7 @@ target="_blank">
 
 <div class="contact-box">
 
-<div class="icon">📍</div>
+<div class="contact-icon">📍</div>
 
 <strong>LOCATION</strong>
 
@@ -982,7 +1455,7 @@ Rajshahi, Bangladesh
 
 <div class="contact-box">
 
-<div class="icon">✉️</div>
+<div class="contact-icon">✉️</div>
 
 <strong>EMAIL</strong>
 
@@ -997,7 +1470,7 @@ rhranahamid21@gmail.com
 
 <div class="contact-box">
 
-<div class="icon">🐟</div>
+<div class="contact-icon">🐟</div>
 
 <strong>PRODUCT</strong>
 
@@ -1010,27 +1483,26 @@ Natural Eel Fish
 
 <div class="contact-box">
 
-<div class="icon">📦</div>
+<div class="contact-icon">📦</div>
 
-<strong>BUSINESS</strong>
+<strong>SUPPLY</strong>
 
 <span>
-Wholesale Supply
+Wholesale / Business
 </span>
 
 </div>
 
-
 </div>
 
 
-<div class="contact-button">
+<div style="margin-top:35px;">
 
-<a href="https://wa.me/8801740047835?text=Hello%20ChalonBill%20Eel%20Fish%2C%20I%20am%20interested%20in%20your%20Eel%20Fish."
-target="_blank"
-class="btn btn-gold">
+<a class="btn btn-gold"
+href="https://wa.me/8801740047835"
+target="_blank">
 
-💬 MAKE A WHOLESALE INQUIRY
+💬 CHAT ON WHATSAPP
 
 </a>
 
@@ -1041,13 +1513,13 @@ class="btn btn-gold">
 </section>
 
 
-<!-- FOOTER -->
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
 <img src="logo.png"
 class="footer-logo"
-alt="ChalonBill Eel Fish Logo">
+alt="ChalonBill Eel Fish">
 
 <h3>
 CHALONBILL EEL FISH
@@ -1068,11 +1540,11 @@ Singra, Natore, Rajshahi, Bangladesh
 </footer>
 
 
-<!-- WHATSAPP -->
+<!-- ================= WHATSAPP ================= -->
 
-<a href="https://wa.me/8801740047835"
-target="_blank"
-class="whatsapp">
+<a class="whatsapp"
+href="https://wa.me/8801740047835"
+target="_blank">
 
 💬
 
